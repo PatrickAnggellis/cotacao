@@ -15,17 +15,17 @@ import java.util.Date;
 import java.util.List;
 
 @ApplicationScoped
-public record QuotationService() {
+public class QuotationService {
 
     @Inject
     @RestClient
-    static CurrencyPriceClient currencyPriceClient;
+    CurrencyPriceClient currencyPriceClient;
 
     @Inject
-    static QuotationRepository quotationRepository;
+    QuotationRepository quotationRepository;
 
     @Inject
-    static KafkaEvents kafkaEvents;
+    KafkaEvents kafkaEvents;
 
 
     public void getCurrencyPrice(){
