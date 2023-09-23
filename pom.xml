@@ -59,6 +59,16 @@
       <version>1.18.24</version>
       <scope>provided</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.quarkus/quarkus-rest-client-reactive-jackson -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
